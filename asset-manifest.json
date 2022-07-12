@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/mtg-random/static/js/main.60ce4ca5.js",
+    "index.html": "/mtg-random/index.html",
+    "main.60ce4ca5.js.map": "/mtg-random/static/js/main.60ce4ca5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.60ce4ca5.js"
+  ]
+}
