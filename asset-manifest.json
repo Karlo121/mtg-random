@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.js": "/mtg-random/static/js/main.60ce4ca5.js",
+    "main.js": "/mtg-random/static/js/main.e03b2437.js",
+    "static/media/white.png": "/mtg-random/static/media/white.0b8ca547d4c69b65ddd3.png",
+    "static/media/red.png": "/mtg-random/static/media/red.91ace79dad1e70269266.png",
+    "static/media/black.png": "/mtg-random/static/media/black.8af2d4fa62b5483b1461.png",
+    "static/media/green.png": "/mtg-random/static/media/green.cd8dd024ec5b1cca3bde.png",
+    "static/media/blue.png": "/mtg-random/static/media/blue.9d382b7b2ab89041ac06.png",
+    "static/media/logo.png": "/mtg-random/static/media/logo.cdf126dba1cf48f1fd62.png",
     "index.html": "/mtg-random/index.html",
-    "main.60ce4ca5.js.map": "/mtg-random/static/js/main.60ce4ca5.js.map"
+    "main.e03b2437.js.map": "/mtg-random/static/js/main.e03b2437.js.map"
   },
   "entrypoints": [
-    "static/js/main.60ce4ca5.js"
+    "static/js/main.e03b2437.js"
   ]
 }
