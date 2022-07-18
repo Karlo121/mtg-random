@@ -1,18 +1,39 @@
 import styled from "styled-components";
 
 export const PlayersContainer = styled.div`
+    background-color: #424549;
+    margin-bottom: 30px;
+    border-radius: 10px;
     .playerCount {
+        background-color: #424549;
         padding: 10px;
-        border: 2px solid white;
         border-radius: 10px;
-        width: 300px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-        background-color: white;
+        width: 732px;
         color: black;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        
+
+        img {
+            width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+    .playerCountValue {
+        color: white;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+    }
     .playerCountLabel {
         text-align: center;
+        font-size: 30px;
         font-family: Helvetica;
+        color: white;
     }
     .playerCountInput {
         width: 200px;
@@ -22,5 +43,4 @@ export const PlayersContainer = styled.div`
         border: 2px solid black;
         display: block;
     }
-}
-`;
+`
