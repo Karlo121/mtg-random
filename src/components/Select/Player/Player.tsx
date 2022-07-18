@@ -4,7 +4,7 @@ import { PlayerProps } from './Player.type';
 const Player = (props: PlayerProps) => {
     const {radioHandler, player} = props;
     return (
-        <div className="radioBox">
+        <div className="radioBox" onClick={radioHandler}>
             <input
                 type="radio"
                 name={player.name}
