@@ -1,14 +1,16 @@
 import React from 'react';
 import { PlayersContainer } from './Players.style';
 import { TPlayers } from './Players.type';
+import logo from '../../media/logo.png'
 
 const Players = (props: TPlayers) => {
-    const {playerCount, handleChange} = props;
+    const {playerCount} = props;
   return (
     <PlayersContainer>
         <div className="playerCount">
-            <p className="playerCountLabel">Player Count</p>
-            <input type="text" name="playerCount" id="playerCount" className="playerCountInput" value={playerCount} onChange={handleChange} />
+            <img src={logo} alt="" />
+            <p className="playerCountLabel">EDH Randomizer</p>
+            <h2 className="playerCountValue">{playerCount}</h2>
         </div>
     </PlayersContainer>
   )

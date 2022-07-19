@@ -5,17 +5,14 @@ import { SelectContainer } from './Select.style'
 import { TSelect,  TPlayer  } from './Select.type'
 
 const Select = (props: TSelect) => {
-    const {radioHandler} = props;
-    const renderPlayers: React.ReactNode = players.map((player: TPlayer) => {
-        return (<Player player={player} radioHandler={radioHandler} />);
+    const {setPlayerCount, playerCount, activePlayers} = props;
+    const renderPlayers: React.ReactNode = players.map((player: TPlayer, index: number) => {
+        return (<Player player={player} setPlayerCount={setPlayerCount} playerCount={playerCount} activePlayers={activePlayers} index={index} />);
     })
     return (
         <SelectContainer>
             <div className="radioContainer"> 
-                <div>
-                    <h2 className="headerTitle">Who playin?</h2>
-                </div>
-                <div>
+                <div className="playerBoxes">
                     {renderPlayers}
                 </div>
             </div>

@@ -47,6 +47,11 @@ export const decks: Array<TDeck> = [
         img: "path", 
     },
     {
+        commander: 'Daxos',
+        colors: ['white','blue'],
+        img: "path", 
+    },
+    {
         commander: 'Strefan',
         colors: ['red','black'],
         img: "path", 

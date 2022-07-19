@@ -1,7 +1,10 @@
-import { ChangeEvent } from "react";
+import { Dispatch, SetStateAction } from "react";
 import { TPlayer } from "../Select.type";
 
 export type PlayerProps = {
-    radioHandler: (e: ChangeEvent<HTMLInputElement>) => void | (e: ChangeEvent<HTMLInputElement>) => void;
+    setPlayerCount: Dispatch<SetStateAction<number>>;
+    playerCount: number;
     player: TPlayer;
+    activePlayers: Array<string>;
+    index: number;
 }

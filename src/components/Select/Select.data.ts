@@ -12,6 +12,11 @@ export const players: Array<TPlayer> = [
         winCount: 0, 
     },
     {
+        name: 'Kandi',
+        img: '',
+        winCount: 0, 
+    },
+    {
         name: 'Gizo',
         img: '',
         winCount: 0, 
