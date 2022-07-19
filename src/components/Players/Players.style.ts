@@ -4,7 +4,7 @@ export const PlayersContainer = styled.div`
     background-color: #424549;
     margin-bottom: 30px;
     border-radius: 10px;
-    width: calc(100vw);
+    width: 100vw;
 
     .playerCount {
         background-color: #424549;

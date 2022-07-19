@@ -9,7 +9,8 @@ export const DeckContainer = styled.div`
     font-family: Helvetica;
     background-color: #2c2f33;
     @media (max-width: 950px) {
-        width: 100vw;
+        width: 60vw;
+        border: 4px solid white;
     }
 
     .colorContainer {

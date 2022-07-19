@@ -7,7 +7,6 @@ export const SelectContainer = styled.div`
         color: black;
         border-radius: 10px;
         display: flex;
-        width: calc(100vw - 40px);
         background-color: #424549;
     }
     .playerBoxes {
