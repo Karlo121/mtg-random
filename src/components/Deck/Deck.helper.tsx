@@ -44,7 +44,15 @@ export const renderColors = (colors: string[]) => {
             );
         }
         else {
-            return <h2>Five Color</h2>
+            return (
+                <div className="colorBox five-color">
+                    <img src={green} alt="color" className="icon" />
+                    <img src={black} alt="color" className="icon" />
+                    <img src={red} alt="color" className="icon"/>
+                    <img src={white} alt="color" className="icon" />
+                    <img src={blue} alt="color" className="icon" />
+                </div>
+            );
         }
     });
 }

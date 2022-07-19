@@ -27,10 +27,20 @@ export const DeckContainer = styled.div`
 
     .icon {
         border-radius: 50%;
+        border: 2px solid black;
     }
     
     div.colorBox > img {
-    max-width: 100%;
-    max-height: 100%;
-}
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .five-color {
+        width: 100%;
+        justify-content: baseline;
+
+        @media (max-width: 950px) {
+            margin-bottom: 65px;
+        }
+    }
 `;
