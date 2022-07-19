@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {decks, TDeck} from './data/decks';
 import {StyledContainer} from './App.style'; 
+import {GlobalStyle} from './themes/global';
 import Players from './components/Players/Players';
 import Select from './components/Select/Select';
 import Deck from './components/Deck/Deck';
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <StyledContainer  className="App">
+      <GlobalStyle />
       <Players playerCount={playerCount}/>
       <Select setPlayerCount={setPlayerCount} playerCount={playerCount} activePlayers={activePlayers} />         
       <div className="buttonContainer">

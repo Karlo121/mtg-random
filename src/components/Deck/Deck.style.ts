@@ -8,7 +8,10 @@ export const DeckContainer = styled.div`
     text-align: center;
     font-family: Helvetica;
     background-color: #2c2f33;
-    
+    @media (max-width: 950px) {
+        width: 100vw;
+    }
+
     .colorContainer {
         display: flex;
         flex-direction: row;

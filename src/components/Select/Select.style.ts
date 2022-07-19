@@ -7,8 +7,7 @@ export const SelectContainer = styled.div`
         color: black;
         border-radius: 10px;
         display: flex;
-        width: calc(100% - 1200px);
-        margin: 0 auto;
+        width: calc(100vw - 40px);
         background-color: #424549;
     }
     .playerBoxes {
@@ -55,5 +54,9 @@ export const SelectContainer = styled.div`
     input[type='radio'] { 
         transform: scale(2.3); 
     };
+
+    @media (max-width: 950px) {
+        width: 100vw;
+    }
     
 `;
