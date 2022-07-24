@@ -9,7 +9,7 @@ const Players = (props: TPlayers) => {
     <PlayersContainer>
         <div className="playerCount">
             <img src={logo} alt="" />
-            <p className="playerCountLabel">EDH Randomizer</p>
+            <p className="playerCountLabel">EDH Randomizer V0.2 Trogir Edition</p>
             <h2 className="playerCountValue">{playerCount}</h2>
         </div>
     </PlayersContainer>
