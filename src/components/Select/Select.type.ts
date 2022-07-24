@@ -10,4 +10,5 @@ export type TPlayer = {
     name: string;
     img: string;
     winCount: number;
+    lastPlayed: string[];
 };

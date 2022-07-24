@@ -2,22 +2,22 @@ export type TDeck = {
     commander: string,
     colors: Array<string>,
     img: string, 
-}
+};
 
-export const decks: Array<TDeck> = [
+export const inactiveDeck: Array<TDeck> = [
     {
         commander: 'Kenrith',
         colors: ['five-color'],
         img: "path", 
     },
     {
-        commander: 'Ninje',
-        colors: ['blue','black'],
+        commander: 'Sfinge',
+        colors: ['blue','white','black'],
         img: "path", 
     },
     {
-        commander: 'Pako',
-        colors: ['blue','red','green'],
+        commander: 'Ninje',
+        colors: ['blue','black'],
         img: "path", 
     },
     {
@@ -37,6 +37,59 @@ export const decks: Array<TDeck> = [
         img: "path", 
     },
     {
+        commander: 'Jeleva',
+        colors: ['red','blue','black'],
+        img: "path", 
+    },
+    {
+        commander: 'Kodama/Jeska',
+        colors: ['red','green'],
+        img: "path", 
+    },
+    {
+        commander: 'Kalamax',
+        colors: ['red','blue','green'],
+        img: "path", 
+    },
+];
+
+export const decks: Array<TDeck> = [
+    {
+        commander: 'Pako',
+        colors: ['blue','red','green'],
+        img: "path", 
+    },  
+    {
+        commander: 'Sliveri',
+        colors: ['five-color'],
+        img: "path", 
+    },  
+    {
+        commander: 'Rattatoulie',
+        colors: ['black'],
+        img: "path", 
+    },  
+    {
+        commander: 'Magda',
+        colors: ['red'],
+        img: "path", 
+    },  
+    {
+        commander: 'Brago',
+        colors: ['blue','white'],
+        img: "path", 
+    },  
+    {
+        commander: 'Merchant',
+        colors: ['red','black'],
+        img: "path", 
+    },  
+    {
+        commander: 'Daxos',
+        colors: ['white','blue'],
+        img: "path", 
+    },
+    {
         commander: 'Atemsis',
         colors: ['blue'],
         img: "path", 
@@ -44,11 +97,6 @@ export const decks: Array<TDeck> = [
     {
         commander: 'Norin',
         colors: ['red'],
-        img: "path", 
-    },
-    {
-        commander: 'Daxos',
-        colors: ['white','blue'],
         img: "path", 
     },
     {
@@ -85,11 +133,6 @@ export const decks: Array<TDeck> = [
     {
         commander: 'Milica',
         colors: ['blue','white'],
-        img: "path", 
-    },
-    {
-        commander: 'Kodama/Jeska',
-        colors: ['red','green'],
         img: "path", 
     },
     {
@@ -153,12 +196,6 @@ export const decks: Array<TDeck> = [
         colors: ['white','red','black'],
         img: "path", 
     },
-
-    {
-        commander: 'Jeleva',
-        colors: ['red','blue','black'],
-        img: "path", 
-    },
     {
         commander: 'Wizardi',
         colors: ['blue','red','black'],
@@ -167,11 +204,6 @@ export const decks: Array<TDeck> = [
     {
         commander: 'Anja',
         colors: ['red','black'],
-        img: "path", 
-    },
-    {
-        commander: 'Sfinge',
-        colors: ['blue','white','black'],
         img: "path", 
     },
     {
@@ -213,11 +245,6 @@ export const decks: Array<TDeck> = [
     {
         commander: 'Zombies',
         colors: ['blue','black'],
-        img: "path", 
-    },
-    {
-        commander: 'Kalamax',
-        colors: ['red','blue','green'],
         img: "path", 
     },
     {

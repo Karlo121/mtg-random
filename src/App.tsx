@@ -5,6 +5,9 @@ import {GlobalStyle} from './themes/global';
 import Players from './components/Players/Players';
 import Select from './components/Select/Select';
 import Deck from './components/Deck/Deck';
+import { players } from './components/Select/Select.data';
+import { TPlayer } from './components/Select/Select.type';
+import {getImage} from './api/getImage'
 
  
 function App() {
@@ -12,31 +15,36 @@ function App() {
   const [chosenDecks, setChosenDecks] = useState<Array<TDeck>>([]);
   const [activePlayers, setActivePlayers] = useState<Array<string>>([]);
   const [startingDecks, setStartingDecks] = useState<Array<TDeck>>(decks);
-  const [squad, setSquad] = useState<Array<string>>([]);
+  const [allPlayers, setAllPlayers] = useState<Array<TPlayer>>(players);
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    e.preventDefault();
-    let count = activePlayers.length;
-    setPlayerCount(count);
-  }
+  getImage();
 
-  let generateTable = () => {
-    console.log(activePlayers);           
+  let generateRandom = (): number => {
+    return Math.floor(Math.random()*startingDecks.length + 1);
+  };
+
+  let generateTable = () => {     
     let activeDecks: Array<TDeck> = startingDecks.slice();
-    let generatedDecks = []; 
-    for(let i = 0; i < activePlayers.length; i++) {
-      let randomNumber = Math.floor(Math.random()*activeDecks.length); 
-      let deck: TDeck = activeDecks[randomNumber];
-      let index = activeDecks.indexOf(deck)
-
-      generatedDecks.push(deck);
-      activeDecks.splice(index,1);
-    }
-    setChosenDecks(generatedDecks);
+    let generatedDecks: Array<TDeck> = []; 
+    activePlayers.map((activePlayer) => {
+      let deck: TDeck = activeDecks[generateRandom()];
+      allPlayers.map((player) => {
+        if(activePlayer === player.name) {
+          if(player.lastPlayed.includes(deck.commander)) {
+            let rerollDeck: TDeck = activeDecks[generateRandom()];
+            generatedDecks.push(rerollDeck);
+          }
+          else {
+            generatedDecks.push(deck);
+            setChosenDecks(generatedDecks);
+          }
+        }
+      });
+    })
   };
 
   let renderDecks = chosenDecks.map((deck: TDeck, index: number) => { return (
-      <Deck index={index} deck={deck} activePlayers={activePlayers} />
+      <Deck index={index} deck={deck} activePlayers={activePlayers} allPlayers={allPlayers} setAllPlayers={setAllPlayers} />
     )});
 
   return (

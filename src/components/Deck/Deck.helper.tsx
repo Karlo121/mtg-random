@@ -7,7 +7,6 @@ import red from '../../media/colors/red.png';
 
 export const renderColors = (colors: string[]) => {
      return colors.map(color => {
-        console.log(color)
         if (color === 'blue') {
             return (
                 <div className="colorBox">
